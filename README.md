@@ -4,6 +4,46 @@
 به صفحه گیت‌هاب من خوش آمدید!
 
 جهان ما از هفت قاره اصلی تشکیل شده است که هر کدام ویژگی‌های جغرافیایی، فرهنگی و زیستی منحصر به فرد خود را دارند. این قاره‌ها عبارتند از:
+```mermaid
+graph TD
+    subgraph World Continents
+        A[Continents of the World] --> B(Asia)
+        A --> C(Africa)
+        A --> D(North America)
+        A --> E(South America)
+        A --> F(Antarctica)
+        A --> G(Europe)
+        A --> H(Australia / Oceania)
+    end
+
+    B --- B1[بزرگترین قاره، تنوع اقلیمی و فرهنگی، اورست]
+    C --- C1[دومین قاره بزرگ، تنوع زیستی بالا، صحرای آفریقا]
+    D --- D1[سومین قاره بزرگ، اقتصادهای قدرتمند، کوه های راکی]
+    E --- E1[چهارمین قاره بزرگ، آمازون و آند، تنوع زیستی]
+    F --- F1[قاره یخی، سردترین، منطقه تحقیقاتی، پنگوئن]
+    G --- G1[دومین قاره کوچک، مرکز تمدن غرب، اقتصادهای پیشرفته]
+    H --- H1[کوچکترین قاره، زیست بوم های منحصر به فرد، صخره مرجانی بزرگ]
+
+    %% Define styles for each continent
+    classDef asiaStyle fill:#FFDDC1,stroke:#FF9933,stroke-width:2px,color:#333;
+    classDef africaStyle fill:#FFF8DC,stroke:#DAA520,stroke-width:2px,color:#333;
+    classDef northAmericaStyle fill:#D1ECF1,stroke:#5BC0DE,stroke-width:2px,color:#333;
+    classDef southAmericaStyle fill:#CCE5FF,stroke:#6699FF,stroke-width:2px,color:#333;
+    classDef antarcticaStyle fill:#E0FFFF,stroke:#ADD8E6,stroke-width:2px,color:#333;
+    classDef europeStyle fill:#D4EDDA,stroke:#28A745,stroke-width:2px,color:#333;
+    classDef australiaStyle fill:#F8D7DA,stroke:#DC3545,stroke-width:2px,color:#333;
+    classDef descStyle fill:#F0F0F0,stroke:#999,stroke-width:1px,color:#555,font-size:12px;
+
+    %% Apply styles to nodes
+    class B asiaStyle;
+    class C africaStyle;
+    class D northAmericaStyle;
+    class E southAmericaStyle;
+    class F antarcticaStyle;
+    class G europeStyle;
+    class H australiaStyle;
+
+    class B1,C1,D1,E1,F1,G1,H1 descStyle;
 
 ---
 
